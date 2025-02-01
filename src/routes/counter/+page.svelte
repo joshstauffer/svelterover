@@ -11,7 +11,7 @@
     let count = $state(0);
   &lt;/script&gt;
   
-  &lt;button onclick={"{"}count++{"}"}&gt;Count = {"{"}count{"}"}&lt;/button&gt;
+  &lt;button onclick={"{"}count++{"}"}&gt;The count is {"{"}count{"}"}&lt;/button&gt;
 
   &lt;style&gt;
     button {"{"}
