@@ -1,8 +1,11 @@
 <script>
   let count = $state(0);
+  let isOdd = $derived(count % 2 === 1);
 </script>
 
 <button onclick={count++}>The count is {count}</button>
+
+<div class:odd={isOdd}>The number is {isOdd ? "odd" : "even"}.</div>
 
 <h3>What the code looks like:</h3>
 
@@ -23,5 +26,10 @@
 <style>
   button {
     font-size: 4rem;
+  }
+
+  .odd {
+    background: black;
+    color: white;
   }
 </style>
